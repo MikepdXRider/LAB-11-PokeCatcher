@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
 import { renderPokemon } from './render-pokemon.js';
-import { cathPokemon } from './data-utils.js'
+import { catchPokemon } from './data-utils.js';
  
 window.addEventListener('load', () =>{
     renderPokemon();
@@ -9,7 +9,7 @@ window.addEventListener('load', () =>{
 const catchButton = document.querySelector('#catch-button');
 
 // initialize global state
-let PokeCaught = 0;
+let pokeCaught = 0;
 
 
 // set event listeners 
@@ -22,9 +22,14 @@ catchButton.addEventListener('click', () => {
     if (checkedInput === null) {
         throw new Error('You must select a pokemon!');
     } else {
-
         const userInput = checkedInput.value;
-
-
+        catchPokemon(userInput);
+        // *Increment and check of pokeCaught could be a ManageCaughtAcc() function
+        pokeCaught++;
+        if (pokeCaught > 9){
+            window.location = './z_results-page/';
+        }
+        // * 
+        renderPokemon();
     }
 }); 
