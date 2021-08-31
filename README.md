@@ -9,6 +9,10 @@
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
 
+## Wire Frame
+
+![Pokemaster-wireframe](./assets/Pokemaster-wireframe.JPG)
+
 <hr>
 
 1. Start with ACL bootstrap/template.
@@ -109,3 +113,6 @@ User should be able too... See the pokemon they caught. How many times they caug
 ### HTML Setup
 - Grab your data from local storage
 - Render a table of values showing 'caught' and 'encounter' from your pokeDex -> this could be a (function)
+
+<hr>
+
