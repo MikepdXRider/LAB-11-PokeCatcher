@@ -116,3 +116,5 @@ User should be able too... See the pokemon they caught. How many times they caug
 
 <hr>
 
+![lab-rubrik](./assets/lab-rubrik.JPG)
+
