@@ -40,7 +40,7 @@ User should be able to... (user story) elect one of three DIFFERENT pokemon and 
 		- Whenever we find 3 new pokemon, we need to track that they have now been "seen".
 		- call `encounterPokemon()` on all 3 new pokemon.
         - create HTML elements w/ radio buttons for each pokemon. (see RPS project)
-        - set necessary attributes to each HTML element.
+        - set necessary attributes to each HTML element(`value="pokemon.id"`).
         - append nesting HTML elements as necessary.
         - final append to DOM.
 
