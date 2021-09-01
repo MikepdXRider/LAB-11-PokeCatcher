@@ -74,6 +74,7 @@ User should be able to... (user story) elect one of three DIFFERENT pokemon and 
 			randomIndex3 = Math.Floor(Math.random() * pokemon.length);
 		}
 		
+
 		
 		return [pokemon[randomIndex1], pokemon[randomIndex2], pokemon[randomIndex3]];
 	}
@@ -118,3 +119,44 @@ User should be able too... See the pokemon they caught. How many times they caug
 
 ![lab-rubrik](./assets/lab-rubrik.JPG)
 
+
+
+render test: 
+ ```
+ 	<label>
+                <input type="radio" value="id" name="pokemon" />
+                <div class="pokemon-card-container">
+                    <p>Name</p>
+                    <img src="" alt="pokemon.name" /> 
+                    <div class="card-text-container">
+                        <p>caught</p>
+                        <p>encounters</p>
+                        <p>type</p>
+                    </div>
+                </div> 
+            </label>
+            <label>
+                <input type="radio" value="id" name="pokemon" />
+                <div class="pokemon-card-container">
+                    <p>Name</p>
+                    <img src="" alt="pokemon.name" /> 
+                    <div class="card-text-container">
+                        <p>caught</p>
+                        <p>encounters</p>
+                        <p>type</p>
+                    </div>
+                </div> 
+            </label>
+            <label>
+                <input type="radio" value="id" name="pokemon" />
+                <div class="pokemon-card-container">
+                    <p>Name</p>
+                    <img src="" alt="pokemon.name" /> 
+                    <div class="card-text-container">
+                        <p>caught</p>
+                        <p>encounters</p>
+                        <p>type</p>
+                    </div>
+                </div> 
+            </label>
+```

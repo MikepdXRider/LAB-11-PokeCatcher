@@ -1,1 +1,23 @@
 /* add home page styles here */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label{
+    border: 2px black solid;
+}
+
+.pokemon-section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.button-section{
+    display: flex;
+    justify-content: center;
+}
+
