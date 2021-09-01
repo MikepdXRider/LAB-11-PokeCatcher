@@ -28,13 +28,11 @@ catchButton.addEventListener('click', () => {
         catchPokemon(userInput);
       // *Increment and check of pokeCaught could be a ManageCaughtAcc() function
         pokeCaught++;
-        console.log(pokeCaught);
         if (pokeCaught === 10){
             window.location.href = './z_results-page/';
         }
       // * 
       
-        console.log(`Check status`, Number(checkedInput.value));
         while (pokemonSection.firstChild) {
             pokemonSection.removeChild(pokemonSection.firstChild);
         }

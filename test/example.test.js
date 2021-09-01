@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
-import { getRandomPokemon } from "../data-utils.js";
+import { getRandomPokemon } from '../data-utils.js';
 
 const test = QUnit.test;
 

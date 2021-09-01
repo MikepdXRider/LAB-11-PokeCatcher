@@ -93,7 +93,6 @@ export function encounterPokemon(obj){
         findById.encounters++;
     }
     setPokedex(pokedexArr);
-    console.log(pokedexArr.find(item => item.id === obj.id));
     return pokedexArr.find(item => item.id === obj.id);
 }
 

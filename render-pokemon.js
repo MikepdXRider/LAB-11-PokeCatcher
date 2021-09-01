@@ -1,4 +1,4 @@
-import { encounterPokemon, getPokedex } from "./data-utils.js";
+import { encounterPokemon } from './data-utils.js';
 
 const pokemonSection = document.querySelector('.pokemon-section');
 
