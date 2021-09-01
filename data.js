@@ -461,4 +461,4 @@ export default [
         'pokebase':'pidgey',
         'pokedex':'http://www.pokemon.com/us/pokedex/pidgey'
     }
-]
+];
