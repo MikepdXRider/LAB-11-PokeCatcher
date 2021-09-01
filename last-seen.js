@@ -1,5 +1,6 @@
 export const LASTSEEN = 'LAST-SEEN';
 
+
 export function setLastSeen(arr){
     let acc = [];
 

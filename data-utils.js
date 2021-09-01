@@ -36,44 +36,6 @@ export function catchPokemon(id){
 }
 
 
-// export function encounterPokemon(obj){
-//     const pokedexArr = getPokedex();
-    
-//     if (pokedexArr.length === 0) {
-//         const newPokeObj = {
-//             id: obj.id,
-//             encounters: 1,
-//             caught: 0,
-//             type: obj.type_1
-//         };
-//         pokedexArr.push(newPokeObj);
-//         setPokedex(pokedexArr);
-//     }
-
-//     if (pokedexArr.length > 0){
-//         for (let item of pokedexArr){
-//             console.log('pokedex length', pokedexArr.length);
-//             console.log('item id', item.id);
-//             console.log('object id', obj.id);
-//             if (obj.id === item.id){
-//                 item.encounters = item.encounters + 1;
-//                 console.log('encounters', item.encounters);
-//             }
-
-//             if (obj.id !== item.id) {
-//                 const newPokeObj = {
-//                     id: obj.id,
-//                     encounters: 1,
-//                     caught: 0,
-//                     type: obj.type_1
-//                 };
-//                 pokedexArr.push(newPokeObj);
-//                 setPokedex(pokedexArr);
-//             }
-//         }
-//     }
-// }
-
 export function encounterPokemon(obj){
     const pokedexArr = getPokedex();
 
@@ -84,7 +46,8 @@ export function encounterPokemon(obj){
             id: obj.id,
             encounters: 1,
             caught: 0,
-            type: obj.type_1
+            type: obj.type_1,
+            name: obj.pokemon
         };
         pokedexArr.push(newObj);
     }
@@ -97,7 +60,6 @@ export function encounterPokemon(obj){
 }
 
     
-
 export function getRandomPokemon(){
     let randomIndex1 = Math.floor(Math.random() * pokeData.length);
     let randomIndex2 = Math.floor(Math.random() * pokeData.length);

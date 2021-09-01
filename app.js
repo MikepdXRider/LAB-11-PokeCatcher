@@ -2,6 +2,7 @@
 import { renderPokemon } from './render-pokemon.js';
 import { catchPokemon, getRandomPokemon } from './data-utils.js';
 
+
 const pokemonSection = document.querySelector('.pokemon-section');
  
 
@@ -10,15 +11,13 @@ window.addEventListener('load', () =>{
     renderPokemon(ranPokeArr);
 });
 
+
 const catchButton = document.querySelector('#catch-button');
 
-// initialize global state
+
 let pokeCaught = 0;
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+
 catchButton.addEventListener('click', () => { 
     const checkedInput = document.querySelector('input:checked');  
     if (checkedInput === null) {
@@ -26,17 +25,20 @@ catchButton.addEventListener('click', () => {
     } else {
         const userInput = Number(checkedInput.value);
         catchPokemon(userInput);
-      // *Increment and check of pokeCaught could be a ManageCaughtAcc() function
+
+        //* Increment and check of pokeCaught could be a ManageCaughtAcc() function
         pokeCaught++;
         if (pokeCaught === 10){
             window.location.href = './z_results-page/';
         }
-      // * 
+        //* 
       
+        //+ Reset and render new DOM could be a function.
         while (pokemonSection.firstChild) {
             pokemonSection.removeChild(pokemonSection.firstChild);
         }
     
         renderPokemon(getRandomPokemon());
+        //+
     }
 }); 
