@@ -1,0 +1,13 @@
+canvas {
+    max-width: 800px;
+    min-height: 
+}
+
+.chart-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    gap: 25px;
+}
+

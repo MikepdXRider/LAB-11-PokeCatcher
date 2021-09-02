@@ -1,19 +1,60 @@
 /* add home page styles here */
 
+*{
+    font-family: sans-serif;
+}
+
 main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 25px;
+    /* background-image: url(./assets/pokemon-volcano.jpg); */
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
 }
 
-label{
-    border: 2px black solid;
+.pokemon-card-container{
+    border: 6px solid rgb(235,220,65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    border-radius: 5%;
+}
+
+h2{
+    align-self: flex-start;
+    margin-bottom: 0;
+    position: relative;
+    left: 15px;
+}
+
+.pokemon-card-container:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 10px grey;
 }
 
 .pokemon-section{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card-text-container{
+    width: 90%;
+    padding: 0;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card-text-container p{
+    margin: 5px;
 }
 
 .button-section{
@@ -21,3 +62,31 @@ label{
     justify-content: center;
 }
 
+input{
+    display: none;
+}
+
+input:checked + .pokemon-card-container{
+    transform: scale(1.10);
+    background-color: yellow;
+    box-shadow: 10px 10px 10px rgb(253, 186, 0);
+}
+
+.catch-button{
+    border: none;
+    background-color: transparent;
+}
+
+.catch-button:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+}
+
+.catch-button:active, .pokemon-card-container:active{
+    transform: scale(.95);
+}
+
+.pokemon-card-container img{
+    max-width: 90%;
+    border: 3px rgb(235,220,65) solid;
+}

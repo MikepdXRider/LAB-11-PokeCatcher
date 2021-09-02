@@ -86,6 +86,7 @@ test('call encounterPokemon with no existing storage, manual storage get returns
         id: 2,
         encounters: 1,
         caught: 0,
+        name: 'ivysaur',
         type: 'grass'
     }];
 

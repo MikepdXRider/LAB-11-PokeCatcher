@@ -6,41 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="../results.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="./results.css">
     <title>PokeDex</title>
 </head>
 
 <body>
     <header>
-        <!-- Style later -->
     </header>
     <main>
-        <section class="pokemon-section">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Pokemon</th>
-                        <th>Type</th>
-                        <th>ranValue</th>
-                        <th>RanValue</th>
-                    </tr>
-                </thead>
-                <tbody id="render-pokemon">
-                    <!-- render pokdex contents here -->
-                </tbody>
-            </table>
-        </section>
-        <section class="button-section">
-            <!-- <button id="catch-button" class="catch-button button">CATCH!</button>
-            <button id="reset-button" class="reset-button button">Reset Session</button> -->
+        <section class="chart-section">
+            <canvas id="caught-chart"></canvas>
+            <canvas id="encounter-chart"></canvas>
+            <canvas id="caught-type-chart"></canvas>
+            <canvas id="encounter-type-chart"></canvas>
         </section>
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
     </footer>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
     <script type="module" src="./results.js"></script>
 </body>
 
