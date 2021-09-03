@@ -14,12 +14,16 @@
 
 <body>
     <header>
-        <div class="lrg-blue-circle"></div>
-        <div class="sml-red-circle"></div>
-        <div class="sml-yellow-circle"></div>
-        <div class="sml-green-circle"></div>
-        <h1>Pokedex</h1>
-    </header>
+        <div class="header-circle-cont">
+            <div class="lrg-blue-circle"></div>
+            <div class="sml-circle-container">
+                <div class="sml-red-circle"></div>
+                <div class="sml-yellow-circle"></div>
+                <div class="sml-green-circle"></div>
+            </div>
+            <!-- <h1>Pokedex</h1> -->
+        </div>
+        </header>
     <main>
         <section class="pokemon-section">
             <!-- Render Pokemon Radio Buttons here. -->
@@ -60,13 +64,19 @@
                 </div> 
             </label> -->
         </section>
-        <section class="button-section">
-            <button id="catch-button" class="catch-button button"><img src="./assets/pokeball-button-removebg-preview.png" alt="pokeball"></button>
-        </section>
     </main>
     <footer>
-        <button id="reset-button" class="reset-button button">Reset Session</button>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
+        <!-- <section class="button-section">
+            <button id="catch-button" class="catch-button button"><img src="./assets/pokeball-button-removebg-preview.png" alt="pokeball"></button>
+        </section> -->
+        <!-- <button id="reset-button" class="reset-button button">Reset Session</button> -->
+        <img src="./assets/pngwing.com.png">
+        <div class="footer-button-cont">
+            <div id="catch-button" class="dark-blue-circle catch-button">CATCH!</div>
+            <div class="green-oval"></div>
+            <div class="orange-oval"></div>
+        </div>
+        <div class="yellow-panel"></div>
     </footer>
 
     <script type="module" src="./app.js"></script>
