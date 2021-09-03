@@ -17,12 +17,17 @@ main{
     width: 100vw; */
 }
 
+label{
+    display: flex;
+    justify-content: center;
+}
+
 .pokemon-card-container{
     border: 6px solid rgb(235,220,65);
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 280px;
+    width: 80%;
     border-radius: 5%;
 }
 
@@ -70,25 +75,32 @@ input{
 }
 
 input:checked + .pokemon-card-container{
-    transform: scale(1.10);
+    transform: scale(1.05);
     background-color: yellow;
     box-shadow: 10px 10px 10px rgb(253, 186, 0);
 }
 
 .catch-button{
     border: none;
-    background-color: transparent;
 }
 
 .catch-button:hover{
     cursor: pointer;
-    transform: scale(1.10);
+    transform: scale(1.05);
 }
 
 .catch-button:active, .pokemon-card-container:active{
     transform: scale(.95);
 }
 
+.dark-blue-circle{
+color: gold;
+font-family: sans-serif;
+display: flex;
+align-items:center;
+justify-content: center;
+font-weight: bold;
+}
 .pokemon-card-container img{
     max-width: 90%;
     border: 3px rgb(235,220,65) solid;
